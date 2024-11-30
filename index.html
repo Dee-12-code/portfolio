@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="icon"   type="image/x-icon" href="img/logo.jpg">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -167,14 +168,14 @@
             <!-- To simplify the tutorial, the value is static. -->
             <input type="hidden" name="contact_number" value="697483">
             <label>Name</label>
-            <input type="text" name="user_name">
+            <input type="text" name="user_name" placeholder="Enter Your Name" required>
             <label>Email</label>
-            <input type="email" name="user_email">
+            <input type="email" name="user_email" placeholder="Input Email" required>
             <label>Phone Number</label>
-            <input type="text" name="user_number">
+            <input type="text" name="user_number" placeholder="Input Phone Number" required>
             <label>Message</label>
-            <textarea name="message"></textarea>
-            <button type="submit" id="submit">Send</button>
+            <textarea name="message" placeholder="Input Message"></textarea>
+            <button type="submit" id="submit"><i class="fa fa-paper-plane"></i>Send</button>
         </form>
     </section>
 
