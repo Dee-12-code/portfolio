@@ -1,7 +1,10 @@
-backend:
+ backend:
   name: github
-  repo: Dee-12-code/portfolio
+  repo: dee-12-code/portfolio
   branch: main
+  auth_scope: repo
+  site_domain: https://dee-12-code.github.io/portfolio/
+  base_url: https://api.netlify.com
 
 media_folder: "/img" # Folder for uploaded images
 public_folder: "/img"
