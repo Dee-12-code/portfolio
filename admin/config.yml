@@ -6,8 +6,9 @@
   site_domain: https://dee-12-code.github.io/portfolio/
   base_url: https://api.netlify.com
 
-media_folder: "/img" # Folder for uploaded images
-public_folder: "/img"
+media_folder: "images/uploads" # Folder where media files will be stored
+public_folder: "/images/uploads"
+
 
 collections:
   - name: "blog" # Name of the collection
