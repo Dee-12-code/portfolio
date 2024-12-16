@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: Dee-12-code/portfolio
+  branch: main
+
+media_folder: "/img" # Folder for uploaded images
+public_folder: "/img"
+
+collections:
+  - name: "blog" # Name of the collection
+    label: "Blog Posts"
+    folder: "content/blog" # Folder to save files
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # URL slug format
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
