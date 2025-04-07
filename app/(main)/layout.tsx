@@ -4,7 +4,7 @@ import ThemeSwitcher from './components/ThemeSwitcher';
 import Footer from './components/Footer';
 import ParticlesBackground from './components/ParticlesBackground';
 import type { Metadata } from "next";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Oladeji Johnson | Portfolio",
@@ -19,6 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-200">
         <Navbar />
+        <SpeedInsights/>
         <ParticlesBackground/>
         <ThemeSwitcher />
         <main>{children}</main>
