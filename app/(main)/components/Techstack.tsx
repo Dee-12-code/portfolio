@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa';
 import { 
   SiTailwindcss, SiFramer, SiJquery, SiSpringboot, 
-  SiVercel, SiJest, SiGit,
+  SiVercel, SiGit,
   SiNetlify
 } from 'react-icons/si';
 import { 
