@@ -45,7 +45,7 @@ export default function About() {
               where aesthetics meet engineering.
             </p>
             <p>
-              Fun fact: I&apos;ve <strong className="text-indigo-600 dark:text-indigo-400">contributed to open-source design systems</strong>
+              Fun fact: I&apos;ve <strong className="text-indigo-600 dark:text-indigo-400">contributed to open-source design systems </strong>
               while helping startups build their MVPs—proving
               that scalable code and rapid iteration can coexist.
             </p>
