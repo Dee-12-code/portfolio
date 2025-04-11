@@ -1,4 +1,3 @@
-// app/(main)/components/ParticlesBackground.tsx
 'use client';
 
 import { useCallback } from 'react';
@@ -44,39 +43,40 @@ const ParticlesBackground = () => {
           },
           particles: {
             color: {
-              value: '#3b82f6', // Tailwind blue-500
+              value: ['#3b82f6'], // Multiple colors for variety
             },
             links: {
-              color: '#93c5fd', // Tailwind blue-300
+              color: '#93c5fd', // White links for a sleek look
               distance: 150,
               enable: true,
               opacity: 0.3,
               width: 1,
             },
             move: {
-              direction: 'none',
+              direction: 'none', // No specific direction for movement
               enable: true,
               outModes: {
                 default: 'bounce',
               },
-              random: false,
-              speed: 1,
+              random: true, // Random movement
+              speed: 2, // Increase speed for more action
               straight: false,
             },
             number: {
               density: {
                 enable: true,
+                value_area: 800, // Increase density for a fuller look
               },
-              value: 60,
+              value: 120, // More particles for a denser background
             },
             opacity: {
-              value: 0.3,
+              value: 0.5, // Slightly higher opacity for a bolder look
             },
             shape: {
-              type: 'circle',
+              type: ['circle', 'triangle', 'polygon'], // Variety of shapes
             },
             size: {
-              value: { min: 1, max: 3 },
+              value: { min: 1, max: 5 }, // Larger particles for more impact
             },
           },
           detectRetina: true,
