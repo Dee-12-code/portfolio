@@ -1,6 +1,5 @@
 import './globals.css';
 import Navbar from './components/Navbar';
-import ThemeSwitcher from './components/ThemeSwitcher';
 import Footer from './components/Footer';
 import ParticlesBackground from './components/ParticlesBackground';
 import type { Metadata } from "next";
@@ -21,7 +20,6 @@ export default function RootLayout({
         <Navbar />
         <SpeedInsights/>
         <ParticlesBackground/>
-        <ThemeSwitcher />
         <main>{children}</main>
         <Footer />
       </body>
