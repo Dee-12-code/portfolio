@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 
 const certs = [
   { name: "Front-End Development", issuer: "Axia Africa", year: "2025" },
+  { name: "Software Engineer", issuer: "Walmart GlobalTech (USA)", year: "2025" },
   { name: "Software Engineer", issuer: "Hewlett Packard Enterprise (HPE)", year: "2025" },
   { name: "Responsive Web Design", issuer: "freeCodeCamp", year: "2024" },
   { name: "JavaScript Algorithms and Data Structures", issuer: "freeCodeCamp", year: "2024" },
