@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import ParticlesBackground from './components/ParticlesBackground';
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import FutureLineChat from "./components/FutureLineChat";
 
 export const metadata: Metadata = {
   title: "Oladeji Johnson | Portfolio",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <SpeedInsights/>
         <ParticlesBackground/>
         <main>{children}</main>
+        <FutureLineChat />
         <Footer />
       </body>
     </html>
