@@ -1,7 +1,48 @@
 "use client";
 import { motion } from 'framer-motion';
+import { useEffect, useState, useCallback } from 'react';
 
 export default function Hero() {
+  const phrases = [
+    "Expressing the magic of words in code",
+    "Breaking the bounds of code",
+    "Building digital experiences that leave a mark.",
+    "Turning ideas into seamless realities.",
+    "Crafting the future, one line at a time.",
+    "Where creativity meets functionality.",
+    "Engineering solutions beyond limits.",
+  ];
+
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typingSpeed, setTypingSpeed] = useState(100);
+
+  const handleTyping = useCallback(() => {
+    const fullText = phrases[currentPhraseIndex % phrases.length];
+
+    if (isDeleting) {
+      setCurrentText(fullText.substring(0, currentText.length - 1));
+      setTypingSpeed(30);
+    } else {
+      setCurrentText(fullText.substring(0, currentText.length + 1));
+      setTypingSpeed(100);
+    }
+
+    if (!isDeleting && currentText === fullText) {
+      setTimeout(() => setIsDeleting(true), 1000);
+    } else if (isDeleting && currentText === '') {
+      setIsDeleting(false);
+      setCurrentPhraseIndex((prevIndex) => prevIndex + 1);
+      setTypingSpeed(300);
+    }
+  }, [currentPhraseIndex, currentText, isDeleting, phrases]);
+
+  useEffect(() => {
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [currentText, isDeleting, currentPhraseIndex, handleTyping, typingSpeed]);
+
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 px-6">
       <div className="container mx-auto text-center">
@@ -26,6 +67,11 @@ export default function Hero() {
           Frontend specialist crafting performant, accessible digital experiences with 
           <span className="text-indigo-500 dark:text-indigo-400"> micro-interactions</span> and 
           <span className="text-emerald-500 dark:text-emerald-400"> pixel-perfect</span> implementation.
+          <br />
+          <span className="inline-block mt-4 text-indigo-500 dark:text-indigo-400 min-h-[1.5em]">
+            {currentText}
+            <span className="animate-pulse">|</span>
+          </span>
         </motion.p>
         
         <motion.div
