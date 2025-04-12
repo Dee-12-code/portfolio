@@ -199,7 +199,7 @@ export default function BlogPostPage() {
                 return match ? (
                   <div className="my-6">
                     <SyntaxHighlighter
-                      style={dracula}
+                      style={dracula as any}
                       language={match[1]}
                       PreTag="div"
                       showLineNumbers
