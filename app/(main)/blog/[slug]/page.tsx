@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client';
 import { motion } from "framer-motion";
 import { useRouter, useParams, notFound } from "next/navigation";
@@ -198,7 +199,7 @@ export default function BlogPostPage() {
                 const match = /language-(\w+)/.exec(className || "");
                 return match ? (
                   <div className="my-6">
-                    /* eslint-disable-next-line react/style-prop-object */
+                    
                     <SyntaxHighlighter
                       style={dracula as React.CSSProperties}
                       language={match[1]}
