@@ -43,6 +43,20 @@ export default function Navbar() {
               </Link>
             </motion.div>
           ))}
+          {/* Blog Link */}
+          <motion.div
+            key="Blog"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <Link 
+              href="/blog" 
+              className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors font-medium"
+            >
+              Blog
+            </Link>
+          </motion.div>
         </div>
 
         {/* Mobile Menu Toggle Button */}
@@ -99,7 +113,15 @@ export default function Navbar() {
                 {item}
               </Link>
             ))}
-             <ResumeButton />
+            {/* Blog Link in Mobile Menu */}
+            <Link
+              href="/blog"
+              className="block text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors font-medium py-2"
+              onClick={toggleNavbar}
+            >
+              Blog
+            </Link>
+            <ResumeButton />
           </div>
         </div>
       )}
