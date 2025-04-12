@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 'use client';
 import { motion } from "framer-motion";
 import { useRouter, useParams, notFound } from "next/navigation";
@@ -201,7 +201,7 @@ export default function BlogPostPage() {
                   <div className="my-6">
                     
                     <SyntaxHighlighter
-                      style={dracula as React.CSSProperties}
+                      style={dracula as React.CSSProperties} // eslint-disable no-alert
                       language={match[1]}
                       PreTag="div"
                       showLineNumbers
