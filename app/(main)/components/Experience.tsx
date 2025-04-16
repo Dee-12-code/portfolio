@@ -19,12 +19,12 @@ const experiences = [
   },
   {
     year: "2025",
-    role: "Frontend Developer Intern",
-    company: "Axia Africa",
+    role: "Software Engineer (Simulation)",
+    company: "Walmart GlobalTech",
     details: [
-      "Developed reusable component library for fintech products",
-      "Reduced bundle size by 30% through code splitting",
-      "Mentored junior developers on React best practices"
+      "Developed a novel version of a heap data structure in Java for Walmart's shipping department, showcasing strong problem-solving and algorithmic skills",
+      "Designed a UML class diagram for a data processor, considering different operating modes and database connections",
+      "Created an entity relationship diagram to design a new database accounting for all requirements provided by Walmart's pet department"
     ]
   },
   {
