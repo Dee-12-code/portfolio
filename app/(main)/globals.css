@@ -15,7 +15,8 @@
     @apply bg-gray-100 dark:bg-gray-800;
   }
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-400 dark:bg-gray-600 rounded-full;
+    background: linear-gradient(to right, #4f46e5, #a855f7);
+    border-radius: 4px;
   }
 }
 
