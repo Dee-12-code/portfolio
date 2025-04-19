@@ -9,7 +9,7 @@ export default function ResumeButton({ className = '' }: { className?: string })
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="/resume.pdf"
+      href="/Oladeji Johnson Resume.pdf"
       download="Oladeji Johnson Resume.pdf"
       className={`flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-medium shadow-lg hover:shadow-indigo-500/20 ${className}`}
     >
